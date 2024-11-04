@@ -199,8 +199,10 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/dark-bg-mob.jpg);
-
+    image-set(
+      url(../images/dark-bg-mob.jpg) 1x,
+      url(../images/Dark-bg-mob-min.jpg) 2x
+    );
   background-repeat: no-repeat;
   background-position: center;
   min-width: 320px;
@@ -926,7 +928,10 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/dark-bg-pl.jpg);
+      image-set(
+        url(../images/dark-bg-pl.jpg) 1x,
+        url(../images/Dark-bg-pl-min.jpg) 2x
+      );
   }
 
   .main-page-title {
@@ -1068,7 +1073,10 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      image-set(
+        url(../images/people-office.jpg) 1x,
+        url(../images/people-office-d-min.jpg)
+      );
   }
   .main-page-title {
     margin-bottom: 48px;
