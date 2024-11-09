@@ -194,20 +194,26 @@ button {
 /* -------------PAGE------------- */
 .main-page {
   background-color: #2e2f42;
-  /* padding: 188px 0; */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    image-set(
-      url(../images/dark-bg-mob.jpg) 1x,
-      url(../images/Dark-bg-mob-min.jpg) 2x
-    );
+    url(../images/dark-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 320px;
   background-size: cover;
+  min-width: 320px;
   padding: 72px 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-mob-min.jpg);
+  }
 }
 
 .page-container {
@@ -315,7 +321,7 @@ button {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   justify-content: center;
   flex-wrap: wrap;
   list-style-type: none;
@@ -324,7 +330,7 @@ button {
 
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 72) / 4);
+  /* width: calc((100% - 72) / 4); */
   border-radius: 0 0 4px 4px;
   height: 428px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -928,10 +934,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      image-set(
-        url(../images/dark-bg-pl.jpg) 1x,
-        url(../images/Dark-bg-pl-min.jpg) 2x
-      );
+      url(../images/dark-bg-pl.jpg);
   }
 
   .main-page-title {
@@ -961,6 +964,7 @@ button {
   /* -----------TEAM-------------- */
   .team-list {
     gap: 24px;
+    row-gap: 72px;
   }
 
   .team-item {
@@ -1025,6 +1029,16 @@ button {
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-pl-min.jpg);
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -1073,10 +1087,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      image-set(
-        url(../images/people-office.jpg) 1x,
-        url(../images/people-office-d-min.jpg)
-      );
+      url(../images/people-office.jpg);
   }
   .main-page-title {
     margin-bottom: 48px;
@@ -1176,5 +1187,15 @@ button {
 
   .footer-input::placeholder {
     color: #fff;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-d-min.jpg);
   }
 }
